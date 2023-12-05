@@ -1,0 +1,95 @@
+.tuta{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    color: white;
+}
+
+.tuta-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 80px;
+    line-height: 1.1;
+}
+
+.tuta-left h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.tuta-left p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tuta-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tuta-hand-icon img{
+    width: 50px;
+}
+
+.tuta-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    border-style: double;
+    border-color: gold;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.tuta-right img{
+    height: 70%;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 760px) {
+
+    .tuta-left{
+        position: absolute;
+        gap: 20px;
+        padding-left: 30px;
+        line-height: 0.6;
+        z-index: 99;
+    }
+
+    .tuta-right{
+        margin-left: 150px;
+        margin-bottom: 200px;
+    }
+
+    .tuta-left p{
+        font-size: 16px;
+    }
+
+    .tuta-left h2{
+        font-size: 20px;
+    }
+
+    .tuta-latest-btn{
+        margin-top: 100px;
+    }
+
+    .tuta-right img{
+        position: absolute;
+        height: 40%;
+        margin-left: 590x;
+        top: 0;
+        right: 0;
+    }
+
+}    
