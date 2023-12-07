@@ -2,7 +2,7 @@ import React from 'react';
 import Tuta from '../Tuta/Tuta';
 import Popular from '../Popular/Popular';
 import NewCollections from '../NewCollections/NewCollections';
-import NewsLetter from '../NewsLetter/NewsLetter';
+
 
 const Shop = () => {
   return (
@@ -10,7 +10,7 @@ const Shop = () => {
         < Tuta />
         < Popular />
         < NewCollections />
-        < NewsLetter />
+        
     </div>
   )
 }
