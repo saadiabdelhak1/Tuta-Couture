@@ -1,0 +1,47 @@
+.new-collections{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    margin-top: 50px;
+
+}
+
+.new-collections h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+     
+}
+
+.new-collections hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: white;
+}
+
+.collections{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+}
+
+@media screen and (max-width: 760px){
+
+    .new-collections{
+        gap: 20px;
+        height: auto;
+    
+    }
+    .new-collections h1{
+        font-size: 30px;
+        font-weight: 600;
+         
+    }
+}

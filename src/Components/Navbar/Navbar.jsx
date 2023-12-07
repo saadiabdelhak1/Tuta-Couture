@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="nav-logo">
           <Link to='/'>
-            <img src={logo} alt="" /> 
+            <img src={logo} alt="logo" /> 
           </Link>
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -46,10 +46,11 @@ const Navbar = () => {
             <Link to='/Cart'><div className="cart-icon">
               <FontAwesomeIcon icon={faCartShopping} size="xl" color='white'/>
             </div></Link>
+            <div className="menu-icon" onClick={handleClick}>
+              {click ? <img src={faX} alt='toggel'/> : <img src={faBars} alt='toggel'/>}
+            </div>
         </div>
-        <div className="menu-icon" onClick={handleClick}>
-          {click ? <img src={faX}/> : <img src={faBars}/>}
-        </div>
+        
       </div>
     </div>
   )

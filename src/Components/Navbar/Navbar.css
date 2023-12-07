@@ -1,7 +1,7 @@
 .navbar {
     background: #181819;
     height: 85px;
-    width: auto;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,14 +11,21 @@
     z-index: 999;
     justify-content: space-between;
     box-shadow: 0 1.5px gold;
+    margin-bottom: 30px;
 }
 
 .navbar-container{
     display: flex;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     justify-content: space-between;
-    color: white; 
-    position: fixed;
+    color: white;
     
 }
 
@@ -64,10 +71,10 @@
 
 .nav-login-cart {
     display: flex;
-    margin-right: 40px;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
     align-items: center;
+    margin-right: 30px;
+    gap: 30px;
 }
 
 .nav-login-cart .cart-icon:hover{
@@ -99,9 +106,6 @@
 }
 
 @media screen and (max-width: 760px) {
-    .NavbarItems {
-      position: relative;
-    }
   
     .nav-menu {
       display: flex;
@@ -118,13 +122,17 @@
     .menu-icon{
         display: flex;
         position: relative;
+        justify-content: center;
+        align-items: flex-start;
         z-index: 999;
+        right: 10px;
     }
 
-    .nav-login-cart{
-        padding: 10px;
-        margin: 0;
+    .nav-login-cart {
+        display: flex;
+        margin-left: 10px;
     }
+    
   
     .nav-menu.active {
       background: #000000;
